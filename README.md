@@ -13,7 +13,7 @@ A Laravel-based web application for uploading and processing Excel files.
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/Sanjay-Office-Works/ows.git
    cd ows
    ```
 
