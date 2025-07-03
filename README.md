@@ -74,13 +74,17 @@ A Laravel-based web application for uploading and processing Excel files.
 
 ```
 app/
+  Actions/            # Action classes (e.g., StoreUploadedFileAction)
+  DTO/                # DTO classes (e.g., UploadedFileDTO)
+  Events/             # Events (e.g., UploadedFileUpdated)
   Http/
     Controllers/      # Application controllers
-    Requests/         # Form request validation
-    Imports/          # Excel import logic
-    Jobs/             # Queue jobs (e.g., ProcessExcelFile)
+    Requests/         # Form request validation (e.g., StoreUploadedFileRequest)
+  Imports/            # Excel import logic (e.g., ProductImport)
+  Jobs/               # Queue jobs (e.g., ProcessExcelFile)
   Models/             # Eloquent models
   Providers/          # Service providers
+  Services/           # Services (e.g., UploadedFileService)
   View/               # View components
 
 bootstrap/            # Laravel bootstrap files
